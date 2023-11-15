@@ -86,3 +86,28 @@ if( jobscout_is_woocommerce_activated() ){
 if( jobscout_is_wp_job_manager_activated() ) :
 	require get_template_directory() . '/inc/wp-job-manager-filters.php';
 endif;
+
+function enqueue_stylesBS5() {
+    // Enqueue Bootstrap CSS from CDN
+    wp_enqueue_style('enqueue_stylesBS5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_stylesBS5');
+
+
+function enqueue_scriptBS5() {
+    // Enqueue Bootstrap JS from CDN
+    wp_enqueue_script('enqueue_scriptBS5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
+}
+add_action('wp_enqueue_scripts', 'enqueue_scriptBS5');
+
+function enqueue_SeparateBS5() {
+    // Enqueue Tailwind CSS from CDN
+    wp_enqueue_script('enqueue_SeparateBS5', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js');
+}
+add_action('wp_enqueue_scripts', 'enqueue_SeparateBS5');
+
+function enqueue_SeparateBS51() {
+    // Enqueue Bootstrap JS from CDN
+    wp_enqueue_script('enqueue_SeparateBS51', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js');
+}
+add_action('wp_enqueue_scripts', 'enqueue_SeparateBS51');
