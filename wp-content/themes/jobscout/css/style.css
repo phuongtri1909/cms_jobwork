@@ -1,0 +1,40 @@
+body{
+    background: #f2f2f2;
+}
+
+#newest-blog .blog-all-item{
+   padding-top: 40px;
+}
+
+#newest-blog .section-title{
+    font-weight: 600;
+ }
+
+#newest-blog .blog-all-item .blog-item figure.post-thumbnail{
+    margin-bottom: 0px;
+}
+
+#newest-blog .blog-all-item .blog-item .entry-header .entry-title a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#newest-blog .blog-all-item .blog-item .blog-item-text{
+    text-align: left;
+}
+
+#newest-blog .blog-all-item .blog-item .blog-item-text .read-more a{
+   color: #ea751e;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+#newest-blog .blog-all-item .blog-item .blog-item-text .entry-excerpt{
+    font-size: 14px;    
+}
+
+
+#newest-blog .blog-all-item .blog-item .blog-item1{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
+}
