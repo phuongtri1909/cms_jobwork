@@ -499,31 +499,50 @@ if( ! function_exists( 'jobscout_footer_top' ) ) :
 /**
  * Footer Top
 */
-function jobscout_footer_top(){    
+function jobscout_footer_top(){
     $footer_sidebars = array( 'footer-one', 'footer-two', 'footer-three', 'footer-four' );
     $active_sidebars = array();
     $sidebar_count   = 0;
-    
+
     foreach ( $footer_sidebars as $sidebar ) {
         if( is_active_sidebar( $sidebar ) ){
             array_push( $active_sidebars, $sidebar );
             $sidebar_count++ ;
         }
     }
-                 
+
     if( $active_sidebars ){ ?>
-        <div class="footer-t">
-    		<div class="container">
-    			<div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
-                <?php foreach( $active_sidebars as $active ){ ?>
-    				<div class="col">
-    				   <?php dynamic_sidebar( $active ); ?>	
-    				</div>
-                <?php } ?>
+        <div class="footer-t footers">
+            <div class="container">
+                <div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
+                    <div class="col">
+                        <?php
+                        // Hiển thị tiêu đề với liên kết đến trang chủ
+                        echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+                        ?>
+                    </div>
+                    <div class="col">
+                        <?php
+                        // Hiển thị menu của trang "job_work" trong footer
+                        wp_nav_menu( array(
+                            'theme_location' => 'job_work_menu', // Định danh của vị trí menu
+                            'container'      => false, // Không hiển thị container bọc menu
+                            'menu_class'     => 'job-work-menu', // Lớp CSS của menu
+                        ) );
+                        ?>
+                    </div>
+                    <div class="col">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #1508c4;"></i></a></li>
+                            <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+                            <li><a href="https://line.me"><i class="fab fa-line"></i></a></li>
+                            <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-    		</div>
-    	</div>
-        <?php 
+            </div>
+        </div>
+    <?php
     }
 }
 endif;
