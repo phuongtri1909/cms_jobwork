@@ -38,3 +38,19 @@ body{
 #newest-blog .blog-all-item .blog-item .blog-item1{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
 }
+/* footer */
+.tile{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+}
+.tile1{
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+.gaps {
+    gap: 1.75rem  !important; 
+    margin-top: -10px;
+    margin-bottom: 9px;
+}
+/* end footer */
