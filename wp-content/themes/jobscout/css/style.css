@@ -130,3 +130,9 @@ body{
 #find-custom .banner-caption .jobscout_job_filters .search_submit{
     box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.5);
 }
+
+.rightsidebar .custom-page #primary{
+    float: unset;
+    width: 100%;
+    padding-right: unset;
+}
