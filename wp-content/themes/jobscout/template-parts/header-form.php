@@ -20,7 +20,7 @@ if( $post_slug ){
 ?>
 
 <div class="job_listings">
-  <form class="jobscout_job_filters" method="GET" action="<?php echo esc_url( $action_page ) ?>">
+  <form class="jobscout_job_filters" method="GET" action="/">
     <div class="search_jobs">
       <div class="row g-3">
         <div class="col-md-7">
