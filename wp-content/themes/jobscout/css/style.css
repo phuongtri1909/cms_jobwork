@@ -54,3 +54,101 @@ body{
     margin-bottom: 9px;
 }
 /* end footer */
+
+#find-custom .caption-inner{
+    text-align: left;
+    max-width: 850px;
+}
+
+#find-custom .caption-inner .description{
+    color: #e3e3e1;
+}
+
+#find-custom .caption-inner .title{
+    font-weight: 500;
+}
+
+#find-custom .banner-caption .form-wrap {
+    margin-top: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs input[type="submit"]{
+    background: #ea751e;
+    color: #ffff;
+    text-indent: 0;
+    width: 100%;
+    font-weight: 500;
+    padding-left: unset;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs input{
+    height: 50px;
+    background: none;
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs select{
+    height: 50px;
+    background: none;
+    padding-left: 45px;
+    font-weight: 500;
+    font-size: 1em;
+    color: #aeaeae;
+    margin-right: 15px;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs select:focus-visible{
+    outline: none;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs input::placeholder{
+    color: #aeaeae !important;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs{
+    border-radius: 0;
+    display: unset;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs div.search_keywords svg{
+    position: absolute;
+    bottom: 14px;
+    margin-left: 20px;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs div.search_location svg{
+    position: absolute;
+    bottom: 14px;
+    margin-left: 20px;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs div.search_location svg#svg-chevron{
+    right: 20px;
+    bottom: 15px;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs div.search_keywords{
+    background: #fff;
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_jobs div.search_location{
+    background: #fff;
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#find-custom .banner-caption .jobscout_job_filters .search_submit{
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+}
+
+.rightsidebar .custom-page #primary{
+    float: unset;
+    width: 100%;
+    padding-right: unset;
+}
