@@ -152,3 +152,48 @@ body{
     width: 100%;
     padding-right: unset;
 }
+/* header */
+/* CSS */
+
+.active {
+    border-bottom: 2px solid blue;
+}
+
+.header-custom .current_page_item{
+    border-bottom: solid #ea751e 3px;
+}
+
+.header-custom .current_page_item a{
+    color: unset !important;
+}
+.header-custom .main-navigation ul li:hover>a{
+    color: unset !important;
+}
+.header-custom .btn-wrap .btn{
+    background: #ea751e;
+    border: unset !important;
+    border-radius: 0px;
+    text-transform: uppercase; 
+}
+.header-custom .nav-menu{
+    text-transform: uppercase; 
+}
+.header-custom .btn-wrap a.btn:hover{
+    color: unset !important;
+}
+.header-custom .btn-wrap a.btn:focus{
+    color: unset !important;
+}
+.tile-wrap .site-description{
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.tile-wrap .site-title a{
+    font-family: monospace; 
+    color: #000 !important;
+    margin-bottom: 11px;
+}
+.tile-wrap .site-title {
+    margin-bottom: 11px;
+}
+/*  */

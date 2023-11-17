@@ -133,7 +133,7 @@ function jobscout_site_branding( $responsive = false ){
                 echo '</div>';
             } 
 
-            echo '<div class="site-title-wrap">';
+            echo '<div class="site-title-wrap tile-wrap">';
             if( $responsive ){ ?>
                 <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
             <?php }else{
