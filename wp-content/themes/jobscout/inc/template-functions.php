@@ -499,31 +499,82 @@ if( ! function_exists( 'jobscout_footer_top' ) ) :
 /**
  * Footer Top
 */
-function jobscout_footer_top(){    
+function jobscout_footer_top(){
     $footer_sidebars = array( 'footer-one', 'footer-two', 'footer-three', 'footer-four' );
     $active_sidebars = array();
     $sidebar_count   = 0;
-    
+
     foreach ( $footer_sidebars as $sidebar ) {
         if( is_active_sidebar( $sidebar ) ){
             array_push( $active_sidebars, $sidebar );
             $sidebar_count++ ;
         }
     }
-                 
     if( $active_sidebars ){ ?>
-        <div class="footer-t">
-    		<div class="container">
-    			<div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
-                <?php foreach( $active_sidebars as $active ){ ?>
-    				<div class="col">
-    				   <?php dynamic_sidebar( $active ); ?>	
-    				</div>
-                <?php } ?>
-                </div>
-    		</div>
-    	</div>
-        <?php 
+        <div class="flex flex-col mx-3 bg-white rounded-lg">
+  <div class="w-full draggable">
+    <div class="container flex flex-col mx-auto">
+      <div class="flex flex-col items-center w-full my-20 ">
+      <span class="mb-8 tile">
+        <?php
+            // Hiển thị tiêu đề với liên kết đến trang chủ
+            echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+        ?>
+      </span>
+        <div class="flex flex-col items-center gap-6 mb-8 tile1">
+        <div class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900 gaps">
+            <?php
+                 $args = array(
+                'post_type' => 'page', // Loại post là trang (page)
+                'posts_per_page' => 5, // Chỉ hiển thị 5 trang
+                    );
+
+                $limited_pages_query = new WP_Query($args);
+
+                if ($limited_pages_query->have_posts()) {
+            
+                while ($limited_pages_query->have_posts()) {
+                 $limited_pages_query->the_post();
+                 echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+             }
+             
+             wp_reset_postdata();
+            } else {
+                // Hiển thị thông báo nếu không có trang nào được tìm thấy
+             echo 'Không có trang nào.';
+            }
+             ?>
+         </div>
+             <div class="flex items-center gap-8">
+            <a href="https://www.facebook.com/" target="_blank" class="text-grey-700 hover:text-grey-900">
+                 <button id="facebook" class="sticky duration-500 border-2 border-blue-600 fixed w-12 transform h-12 text-2xl rounded-full bg-blue-600 text-white text-blue-600 gap1">
+                        <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            <a href="https://plus.google.com/" target="_blank" class="text-grey-700 hover:text-grey-900">
+                <button id="googleplus" class="transform border-2 w-12 h-12 rounded-full duration-500 text-red-500 border-red-500 bg-red-500 text-white text-2xl">
+                        <i class="fab fa-google-plus-g"></i>
+                </button>
+            </a>
+            <a href="https://line.me/" target="_blank" class="text-grey-700 hover:text-grey-900">
+                <button id="line" class="transform border-2 w-12 h-12 rounded-full duration-500 text-green-400 border-green-400 bg-green-400 text-white text-2xl">
+                        <i class="fab fa-line"></i>
+                </button>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="text-grey-700 hover:text-grey-900">
+                <button id="twitter" class="transform border-2 w-12 h-12 rounded-full duration-500 text-blue-400 border-blue-400 bg-blue-400 text-white text-2xl">
+                        <i class="fab fa-twitter"></i>
+                </button>
+            </a>
+          
+          
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <?php
     }
 }
 endif;
