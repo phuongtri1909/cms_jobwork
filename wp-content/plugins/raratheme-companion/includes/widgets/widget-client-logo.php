@@ -52,7 +52,7 @@ class RaraTheme_Client_Logo_Widget extends WP_Widget {
         ?>
             <div class="raratheme-client-logo-holder">
                 <div class="raratheme-client-logo-inner-holder">
-                    <div class="fex items-center py-10 w-full gap-x-5">                        
+                    <div class="fex items-center py-10 w-full gap-x-5 mrNewsletter1">                        
                    <div class="w-1/5 font-extrabold text-white text-left newsletters ">
                      <div class="bg-[#ea751e] ">
                             <div class="container newsletters1 ">
