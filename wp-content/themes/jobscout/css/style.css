@@ -215,4 +215,40 @@ body{
 .tile-wrap .site-title {
     margin-bottom: 11px;
 }
-/*  */
+/* newsletter*/
+
+.newsletters{
+    width: auto !important;
+    margin-right: -155px;
+    margin-left: -154px;
+}
+.emailAndIcon{
+    position: relative;
+}
+.fa-envelope{
+    position: absolute;
+    top: 18px;
+    left: 14px;
+}
+.emailAndIcon .wpcf7-validates-as-email{
+    padding-left: 42px;
+}
+.newsletterTile p{
+    font-size: 22px;
+    padding-left: 65px;
+    font-family: initial;
+}
+.brnewsletter{
+    padding-bottom: unset !important;
+    padding-top: unset !important;
+}
+.inputEmail .has-spinner{
+    background: unset;
+    border: 1px solid #fff;
+    border-radius:unset;
+    margin-right: 93px;
+}
+.newsletters .newsletters1{
+    text-align: center;
+}
+/* end newletter */
