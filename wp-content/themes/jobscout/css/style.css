@@ -251,4 +251,10 @@ body{
 .newsletters .newsletters1{
     text-align: center;
 }
+.mrNewsletter{
+ margin: unset !important;
+}
+.mrNewsletter1{
+padding: unset !important;
+}
 /* end newletter */
