@@ -121,5 +121,24 @@ if (is_page('news')) {
 	<?php }?>
 	
 <?php
+?>
+<div class="raratheme-client-logo-holder">
+	<div class="raratheme-client-logo-inner-holder">
+		<div class="fex items-center py-10 w-full gap-x-5">                        
+	   		<div class="w-1/5 font-extrabold text-white text-left newsletters ">
+				 <div class="bg-[#ea751e] ">
+					<div class="container newsletters1">
+						<div class="fex items-center py-10 w-full gap-x-5 brnewsletter ">
+							<div class="contentFooter">
+						 		<?php echo do_shortcode('[contact-form-7 id="89dc36f" title="Email"]'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+	 		</div>
+		</div>
+	</div>
+</div>
+<?php
 // get_sidebar();
 get_footer();

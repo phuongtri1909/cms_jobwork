@@ -52,12 +52,13 @@ class RaraTheme_Client_Logo_Widget extends WP_Widget {
         ?>
             <div class="raratheme-client-logo-holder">
                 <div class="raratheme-client-logo-inner-holder">
-                    <div class="fex items-center py-10 w-full gap-x-5">
-                   <div class="w-1/5 font-extrabold text-white text-left">
-                     <div class="bg-[#ea751e]">
-                            <div class="container">
+                    <div class="fex items-center py-10 w-full gap-x-5">                        
+                   <div class="w-1/5 font-extrabold text-white text-left newsletters ">
+                     <div class="bg-[#ea751e] ">
+                            <div class="container newsletters1 ">
+                                <div class="fex items-center py-10 w-full gap-x-5 brnewsletter ">
                                 <div class="contentFooter">
-                                     <?php echo do_shortcode('[contact-form-7 id="6cd4f03" title="Email"]'); ?>
+                                     <?php echo do_shortcode('[contact-form-7 id="89dc36f" title="Email"]'); ?>
                                 </div>
                             </div>
                         </div>
