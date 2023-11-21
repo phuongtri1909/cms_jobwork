@@ -2,9 +2,9 @@
 Contributors: mikejolley, automattic, adamkheckler, alexsanford1, annezazu, cena, chaselivingston, csonnek, davor.altman, donnapep, donncha, drawmyface, erania-pinnera, fjorgemota, jacobshere, jakeom, jeherve, jenhooks, jgs, jonryan, kraftbj, lamdayap, lschuyler, macmanx, nancythanki, orangesareorange, rachelsquirrel, renathoc, ryancowles, richardmtl, scarstocea
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Requires at least: 6.1
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.2
-Stable tag: 1.42.0
+Stable tag: 2.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,19 +32,19 @@ The plugin comes with several shortcodes to output jobs in various formats, and 
 
 = Documentation =
 
-Documentation for the core plugin and add-ons can be found [on the docs site here](https://wpjobmanager.com/documentation/). Please take a look before requesting support because it covers all frequently asked questions!
+Documentation for the core plugin and extensions can be found [on the docs site here](https://wpjobmanager.com/documentation/). Please take a look before requesting support because it covers all frequently asked questions!
 
 = Demo =
 
 For a real-life example site, check out [jobs.blog](https://jobs.blog), built by the WP Job Manager team!
 
-= Add-ons =
+= Extensions =
 
 The core WP Job Manager plugin is free and always will be. It covers all functionality we consider 'core' to running a simple job board site.
 
-Additional, advanced functionality is available through add-ons. Not only do these extend the usefulness of the core plugin, they also help fund the development and support of core.
+Additional, advanced functionality is available through extensions. Not only do these extend the usefulness of the core plugin, they also help fund the development and support of core.
 
-You can browse available add-ons after installing the plugin by going to `Job Listings > Add-ons`. Our popular add-ons include:
+You can browse available extensions after installing the plugin by going to `Job Manager > Marketplace`. Our popular extensions include:
 
 **[Applications](https://wpjobmanager.com/add-ons/applications/)**
 
@@ -62,9 +62,9 @@ Resume Manager is a plugin built on top of WP Job Manager which adds a resume su
 
 Allow registered users to save their job searches and create alerts which send new jobs via email daily, weekly or fortnightly.
 
-**[Core add-on bundle](https://wpjobmanager.com/add-ons/bundle/)**
+**[Job Manager Pro Bundle](https://wpjobmanager.com/add-ons/bundle/)**
 
-You can get the above add-ons and several others at discount with our [Core Add-on Bundle](https://wpjobmanager.com/add-ons/bundle/). Take a look!
+You can get the above extensions and several others at discount with our [WPJM Pro Bundle](https://wpjobmanager.com/add-ons/bundle/). Take a look!
 
 = Contributing and reporting bugs =
 
@@ -76,7 +76,7 @@ Thanks to all of our contributors.
 
 Use the WordPress.org forums for community support where we try to help all users. If you spot a bug, you can log it (or fix it) on [Github](https://github.com/Automattic/WP-Job-Manager) where we can act upon them more efficiently.
 
-If you need help with one of our add-ons, [please raise a ticket in our help desk](https://wpjobmanager.com/support/).
+If you need help with one of our extensions, [please raise a ticket in our help desk](https://wpjobmanager.com/support/).
 
 If you want help with a customization, please consider hiring a developer! [http://jobs.wordpress.net/](http://jobs.wordpress.net/) is a good place to start.
 
@@ -136,8 +136,6 @@ If you wish to be notified of new postings on your site you can use a plugin suc
 = What language files are available? =
 You can view (and contribute) translations via the [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/wp-job-manager).
 
-== Changelog ==
-
 == Screenshots ==
 
 1. The submit job form.
@@ -149,7 +147,24 @@ You can view (and contribute) translations via the [translate.wordpress.org](htt
 
 == Changelog ==
 
-## 1.42.0 - 2023-10-05
+### 2.1.0 - 2023-11-17
+* Fix: Remove public update endpoint and add nonce check (#2642)
+
+### 2.0.0 - 2023-11-17
+* Enhancement: Improve settings descriptions (#2639)
+* Enhancement: Add directApply in Google job schema (#2635)
+* Enhancement: Add 'Don't show this again' link to dismiss promote job modal in the editor (#2632)
+* Enhancement: Add landing pages for Applications and Resumes extensions (#2621)
+* Fix: Align actions in notices in the center (#2637)
+* Fix: Safeguard array in WP_Job_Manager_Settings::input_capabilities (#2631)
+* Fix: Escape menu titles and various admin labels (#2630)
+* Fix: Incorrectly duplicated string in settings (#2628)
+* Fix: Add array initialization to avoid warning (#2619)
+* Fix: Do not check for plugin updates when there are no plugins (#2605)
+* Change: Reorganize administration menu (#2621)
+* Change: Update naming from Add-ons to Extensions, Marketplace (#2621)
+
+### 1.42.0 - 2023-10-05
 New!
 
 * Easily promote job listings on Indeed, LinkedIn, and 1000s of job boards with JobTarget integration. See https://wpjobmanager.com/jobtarget for more information.
@@ -168,7 +183,7 @@ For developers:
 * Tweak: Rename "licence" to "license" throughout codebase (#2554)
 * Fix: More efficient license checking for core add-ons (#2552)
 
-## 1.41.0 - 2023-06-10
+### 1.41.0 - 2023-06-10
 * Enhancement: Introduce listing renewals #2422
 * Enhancement: Allow searching multiple job locations at once #2433
 * Fix: Add check for job listing limit being 0 #2362
@@ -183,22 +198,6 @@ For developers:
 * Change: Run job_manager_job_submitted_content filter in every case #2474
 * Change: Update historical notices to use the new render_notice method. #2409
 
-## 1.40.2 - 2023-05-26
+### 1.40.2 - 2023-05-26
 * Revert: Hide expired job listings from archives
-
-## 1.40.1 - 2023-05-12
-* Fix: Icons not displaying properly
-
-## 1.40.0 - 2023-05-11
-* Enhancement: Improve licensing page experience
-* Enhancement: New email notifications setting
-* Enhancement: Improve discoverability of addon updates
-* Enhancement: New admin notices sytem with redesign
-* Fix: "Hide Expired Listings Content" setting
-* Fix: Hide expired job listings from archives
-* Fix: Show license notice only to users who can manage licenses
-* Fix: Select menu overlapping in Job Listing frontend
-* Fix: Company video overlapping when no tagline set
-* Change: Update tipTip library to use WooCommerce’s version
-* Change: Bumped minimum PHP version from 7.2 to 7.4
 

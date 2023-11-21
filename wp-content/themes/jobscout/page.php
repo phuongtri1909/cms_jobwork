@@ -103,14 +103,24 @@ if (is_page('news')) {
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
-
-				/**
-                 * Comment Template
-                 * 
-                 * @hooked jobscout_comment
-                */
-                do_action( 'jobscout_after_page_content' );
+				if (is_page('about-us')) {?>
+						<div class="page_about-wrap">
+							<!-- <div class="container"> -->
+							<?php
+							get_template_part('template-parts/content', 'page');
+							?>
+							<!-- </div> -->
+						</div>
+				<?php } else {
+						get_template_part('template-parts/content', 'page');
+					}
+		
+					/**
+					 * Comment Template
+					 * 
+					 * @hooked jobscout_comment
+					 */
+					do_action('jobscout_after_page_content');
 
 			endwhile; // End of the loop.
 			?>
@@ -120,6 +130,25 @@ if (is_page('news')) {
 		</div>
 	<?php }?>
 	
+<?php
+?>
+<div class="raratheme-client-logo-holder">
+	<div class="raratheme-client-logo-inner-holder">
+		<div class="fex items-center py-10 w-full gap-x-5 mrNewsletter1">                        
+	   		<div class="w-1/5 font-extrabold text-white text-left newsletters ">
+				 <div class="bg-[#ea751e] ">
+					<div class="container newsletters1">
+						<div class="fex items-center py-10 w-full gap-x-5 brnewsletter ">
+							<div class="contentFooter">
+						 		<?php echo do_shortcode('[contact-form-7 id="89dc36f" title="Email"]'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+	 		</div>
+		</div>
+	</div>
+</div>
 <?php
 // get_sidebar();
 get_footer();

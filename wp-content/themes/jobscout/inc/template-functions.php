@@ -88,9 +88,11 @@ function jobscout_page_start(){ ?>
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#acc-content"><?php esc_html_e( 'Skip to content (Press Enter)', 'jobscout' ); ?></a>
     <?php
+    
 }
 endif;
 add_action( 'jobscout_before_header', 'jobscout_page_start', 20 );
+
 
 if( ! function_exists( 'jobscout_header' ) ) :
 /**
@@ -142,7 +144,7 @@ function jobscout_content_start(){
     echo '<div id="acc-content"><!-- .site-header -->';
     $home_sections = jobscout_get_home_sections(); 
     if( ! ( is_front_page() && ! is_home() && $home_sections ) ){ //Make necessary adjust for pg template.
-        echo is_404() ? '<div class="error-holder">' : '<div id="content" class="site-content">'; 
+        echo is_404() ? '<div class="error-holder">' : '<div id="content" class="site-content mrNewsletter">'; 
 
         if( is_archive() || is_search() || is_page_template( 'templates/portfolio.php' ) ) : ?>
             <header class="page-header">
@@ -197,7 +199,7 @@ function jobscout_content_start(){
                 }
             } 
         ?>
-        <div class="container">
+        <div class="">
         <?php 
     }
 }

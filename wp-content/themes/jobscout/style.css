@@ -8159,3 +8159,106 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+
+/* CSS about */
+.page_about-wrap .about3 h5 {
+  font-size: 1.15rem;
+  padding-bottom: 10px;
+  color: #f18f0a;
+  font-weight: 500;
+}
+.page_about-wrap .about3 .a3 {
+  margin-left: 242px;
+  margin-right: 242px;
+}
+.page_about-wrap .about3 .a2 {
+  margin-left: 248px;
+  margin-right: 248px;
+}
+.page_about-wrap .about3{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background: #fff;
+}
+.page_about-wrap .about2 .row {
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.page_about-wrap .bou4 {
+  margin-top: -3px;
+}
+.page_about-wrap .bou2 {
+  margin-top: 20px;
+}
+.page_about-wrap .about2 h5 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem !important;
+  font-weight: 500;
+}
+.page_about-wrap .about2 p {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.page_about-wrap .about4 h5 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem !important;
+  font-weight: 500;
+}
+.page_about-wrap .about4 p {
+  margin-top: 7px !important;
+  margin-bottom: 0px !important;
+}
+.page_about-wrap .about2 img {
+  padding-right: 30px;
+}
+.page_about-wrap .about2 h1 {
+  text-align: center;
+  padding-bottom: 45px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page_about-wrap .about1 .title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+ }
+ .page_about-wrap .about1 .text-overlay {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.page_about-wrap .about1 {
+  background-image: url(/wp-content/uploads/2019/01/laptop-desk-computer-writing-apple-table-693727-pxhere.com-2-1170x471.jpg);
+}
+
+.page_about-wrap .about4 .row {
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.page_about-wrap .about4 img {
+  padding-left: 34px;
+}
+
+.page_about-wrap .about4 h5 {
+  text-align: center;
+}
+.page_about-wrap .about4 p {
+  text-align: center;
+}
+.page_about-wrap h1.entry-title {
+  display: none;
+}
+.page_about-wrap span.edit-link {
+  display: none;
+}
+.page_about-wrap .about {
+  margin-top: -30px;
+  margin-bottom: -20px;
+}
+/*End CSS about */
