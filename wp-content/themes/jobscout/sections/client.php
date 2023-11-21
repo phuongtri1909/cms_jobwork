@@ -6,7 +6,7 @@
  */
 
 if( is_active_sidebar( 'client' ) ){ ?>
-	<section id="client-section" class="client-section">
+	<section id="client-section" class="client-section mrNewsletter">
 		<div class="container">
 	    	<?php dynamic_sidebar( 'client' ); ?>
 		</div>
