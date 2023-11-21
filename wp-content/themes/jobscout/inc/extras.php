@@ -137,13 +137,10 @@ function jobscout_site_branding( $responsive = false ){
             if( $responsive ){ ?>
                 <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
             <?php }else{
-               if(is_home()){ ?>
-                <p class="site-title" itemprop="name"><a><?php   echo '<img src="wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></p>
-                 <?php 
-             }else{ ?>
-                 <h1 class="site-title imagesheader" itemprop="name"><a><?php  echo '<img src="../wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></h1>      
+               ?>
+                <p class="site-title" itemprop="name"><a><?php  echo '<img src="' . esc_url( get_theme_file_uri( 'images/cms_jobwork.png' ) ) . '" alt="">' ;?></a></p>    
              <?php
-             }
+             
             }
 
             $description = get_bloginfo( 'description', 'display' );
