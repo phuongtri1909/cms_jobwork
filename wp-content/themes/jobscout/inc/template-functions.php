@@ -100,7 +100,7 @@ if( ! function_exists( 'jobscout_header' ) ) :
 */
 function jobscout_header(){ 
     ?>
-        <div class="header-main">
+        <div class="header-main headers">
             <div class="container ">
                 <?php 
                     jobscout_site_branding( false );
