@@ -519,13 +519,9 @@ function jobscout_footer_top(){
         <?php
             // Hiển thị tiêu đề với liên kết đến trang chủ
             //echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
-                if (is_page('jobs-3') || is_page('news') || is_page('checkout') || is_page('contact')) {
-                    echo '<img src="../wp-content/themes/jobscout/images/cms_jobwork.png" alt="">' ;
-                }
-                else{
-                    echo '<img src="wp-content/themes/jobscout/images/cms_jobwork.png" alt="">' ;
-
-                }
+            ?>
+            <p class="site-title" itemprop="name"><a><?php  echo '<img src="' . esc_url( get_theme_file_uri( 'images/cms_jobwork.png' ) ) . '" alt="">' ;?></a></p>    
+         <?php
            
             
         ?>
