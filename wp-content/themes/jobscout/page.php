@@ -103,14 +103,24 @@ if (is_page('news')) {
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
-
-				/**
-                 * Comment Template
-                 * 
-                 * @hooked jobscout_comment
-                */
-                do_action( 'jobscout_after_page_content' );
+				if (is_page('about-us')) {?>
+						<div class="page_about-wrap">
+							<!-- <div class="container"> -->
+							<?php
+							get_template_part('template-parts/content', 'page');
+							?>
+							<!-- </div> -->
+						</div>
+				<?php } else {
+						get_template_part('template-parts/content', 'page');
+					}
+		
+					/**
+					 * Comment Template
+					 * 
+					 * @hooked jobscout_comment
+					 */
+					do_action('jobscout_after_page_content');
 
 			endwhile; // End of the loop.
 			?>
