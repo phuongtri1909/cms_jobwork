@@ -138,7 +138,7 @@ function jobscout_site_branding( $responsive = false ){
                 <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
             <?php }else{
                ?>
-                <p class="site-title" itemprop="name"><a><?php  echo '<img src="' . esc_url( get_theme_file_uri( 'images/cms_jobwork.png' ) ) . '" alt="">' ;?></a></p>    
+                <p class="site-title" itemprop="name"><a><?php  echo '<img src="' . esc_url( get_theme_file_uri( 'images/cms_jobwork.png' ) ) . '" alt="" width="200px">' ;?></a></p>    
              <?php
              
             }

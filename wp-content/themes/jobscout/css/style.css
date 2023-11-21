@@ -194,6 +194,8 @@ body{
     border: unset !important;
     border-radius: 0px;
     text-transform: uppercase; 
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .header-custom .nav-menu{
     text-transform: uppercase; 
