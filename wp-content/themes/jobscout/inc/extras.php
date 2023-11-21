@@ -137,13 +137,13 @@ function jobscout_site_branding( $responsive = false ){
             if( $responsive ){ ?>
                 <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
             <?php }else{
-                if( is_page('jobs-3') || is_page('news') || is_page('checkout') || is_page('contact')  ||is_page('about')){ ?>
-                    <h1 class="site-title imagesheader" itemprop="name"><a><?php  echo '<img src="../wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></h1>
-                    <?php 
-                }else{ ?>
-                    <p class="site-title" itemprop="name"><a><?php   echo '<img src="wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></p>
-                <?php
-                }
+               if(is_home()){ ?>
+                <p class="site-title" itemprop="name"><a><?php   echo '<img src="wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></p>
+                 <?php 
+             }else{ ?>
+                 <h1 class="site-title imagesheader" itemprop="name"><a><?php  echo '<img src="../wp-content/themes/jobscout/images/cms_jobwork.png" alt="" width="200px">';?></a></h1>      
+             <?php
+             }
             }
 
             $description = get_bloginfo( 'description', 'display' );
