@@ -518,8 +518,18 @@ function jobscout_footer_top(){
       <span class="mb-8 tile">
         <?php
             // Hiển thị tiêu đề với liên kết đến trang chủ
-            echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+            //echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+                if (is_page('jobs-3') || is_page('news') || is_page('checkout') || is_page('contact')) {
+                    echo '<img src="../wp-content/themes/jobscout/images/cms_jobwork.png" alt="">' ;
+                }
+                else{
+                    echo '<img src="wp-content/themes/jobscout/images/cms_jobwork.png" alt="">' ;
+
+                }
+           
+            
         ?>
+         
       </span>
         <div class="flex flex-col items-center gap-6 mb-8 tile1">
         <div class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900 gaps">
