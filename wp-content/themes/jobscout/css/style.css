@@ -216,6 +216,55 @@ body{
 .tile-wrap .site-title {
     margin-bottom: 11px;
 }
+/* contact us */
+.custom-page  .entry-header .entry-title-contact {
+    display: none !important;
+}
+
+.site-main .entry-content .banner-contact{
+    position: relative;
+}
+.banner-contact  .img-banner-contact {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50%;
+    margin-right: -50%;
+    margin-top: -1.95em;
+}
+.banner-contact .img-banner-contact img {
+    width: 100%; 
+    height: 400px; 
+    opacity: 0.7;
+
+    /* object-fit: cover; */
+}
+
+.entry-content .banner-contact .entry-title-contact{
+    position: absolute;
+    top: 12.5rem;
+    right: 50%;
+    color: #ffff;
+    transform: translate(50%,-50%);
+    font-size: 40px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+.site-main .entry-content .content-address-contact{
+    position: relative;
+}
+.site-main .entry-content .content-address-contact h5,.site-main .entry-content .content-address-contact p{
+    text-align: center;
+}
+.site-main .entry-content .content-address-contact h5{
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.post-edit-link-contact{
+    display: none;
+}
+/* end contact us */
 /* newsletter*/
 
 .newsletters{
