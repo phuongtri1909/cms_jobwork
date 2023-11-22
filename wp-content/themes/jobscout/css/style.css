@@ -38,6 +38,9 @@ body{
 #newest-blog .blog-all-item .blog-item .blog-item1{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
 }
+#newest-blog .blog-all-item .blog-item .entry-header .entry-title a:hover{
+    color: #ea751e;
+}
 /* footer */
 .tile{
     font-weight: bold;
@@ -197,3 +200,6 @@ body{
     margin-bottom: 11px;
 }
 /*  */
+
+
+

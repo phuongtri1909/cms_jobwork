@@ -2618,7 +2618,7 @@ section.top-job-section .section-title {
 }
 
 .top-job-section .row div.job_listings article .company-name::before {
-  content: "@";
+  
 }
 
 .top-job-section .row div.job_listings article .entry-meta {
@@ -8158,4 +8158,72 @@ RESPONSIVE STYLESHEET
 
 .wp-block-social-links {
   flex-wrap: wrap !important;
+}
+
+/* Top Jobs */
+
+
+.titles .entry-title a {
+  font-weight: bold;
+}
+
+.job-meta .job-date {
+  opacity: 0.7; /* Adjust the opacity as needed (0.0 to 1.0) */
+  margin-top: 5px;
+}
+
+.job-info {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center; /* Đảm bảo các phần tử con được căn giữa theo chiều dọc */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 1px solid #ccc; /* Màu và kích thước của đường viền */
+  display: flex;
+  border-radius: 10px; /* Độ cong của khung bo tròn */
+  background-color: #ccc;  /*Màu xám */
+  margin-bottom: 10px;
+  width: 350px;
+  height: 45px;
+}
+
+
+.job-info .company-name{
+  color: unset!important;
+  margin-bottom: 43px;
+}
+
+.job-info .job-type {
+  margin-bottom: 45px;
+  color: #000 !important;
+  border: unset !important;
+  font-weight: unset !important;
+}
+
+.job-info .job-location {
+  margin-bottom: 39px;
+  margin-left: 10px;
+}
+
+.job-info > *:not(:last-child) {
+  border-right: 1px solid #000;
+  padding-right: 10px;
+  border-left: 1px solid #000;
+  padding-left: 10px;
+}
+.job-info > * {
+  margin-bottom: 10px; /* Khoảng cách giữa các phần tử con */
+}
+
+
+
+.job-content.noidung p {
+	position: relative;
+  text-indent: 20px;
+}
+.job-content.noidung p::before{
+    content: "\2022";
+    position: absolute;
+    display: inline-block;
+    margin-right: 10px;
+    right:435px;
 }
