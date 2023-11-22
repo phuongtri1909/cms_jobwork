@@ -88,9 +88,11 @@ function jobscout_page_start(){ ?>
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#acc-content"><?php esc_html_e( 'Skip to content (Press Enter)', 'jobscout' ); ?></a>
     <?php
+    
 }
 endif;
 add_action( 'jobscout_before_header', 'jobscout_page_start', 20 );
+
 
 if( ! function_exists( 'jobscout_header' ) ) :
 /**
@@ -98,7 +100,7 @@ if( ! function_exists( 'jobscout_header' ) ) :
 */
 function jobscout_header(){ 
     ?>
-        <div class="header-main">
+        <div class="header-main headers">
             <div class="container ">
                 <?php 
                     jobscout_site_branding( false );
@@ -142,7 +144,7 @@ function jobscout_content_start(){
     echo '<div id="acc-content"><!-- .site-header -->';
     $home_sections = jobscout_get_home_sections(); 
     if( ! ( is_front_page() && ! is_home() && $home_sections ) ){ //Make necessary adjust for pg template.
-        echo is_404() ? '<div class="error-holder">' : '<div id="content" class="site-content">'; 
+        echo is_404() ? '<div class="error-holder">' : '<div id="content" class="site-content mrNewsletter">'; 
 
         if( is_archive() || is_search() || is_page_template( 'templates/portfolio.php' ) ) : ?>
             <header class="page-header">
@@ -197,7 +199,7 @@ function jobscout_content_start(){
                 }
             } 
         ?>
-        <div class="container">
+        <div class="">
         <?php 
     }
 }
@@ -270,7 +272,7 @@ function jobscout_entry_header(){ ?>
             }
 
             if ( is_singular() ) :
-                the_title( '<h1 class="entry-title">', '</h1>' );
+                the_title( '<h1 class="entry-title entry-title-contact">', '</h1>' );
             else :
                 the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
             endif;        
@@ -516,8 +518,14 @@ function jobscout_footer_top(){
       <span class="mb-8 tile">
         <?php
             // Hiển thị tiêu đề với liên kết đến trang chủ
-            echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+            //echo '<h3><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></h3>';
+            ?>
+            <p class="site-title" itemprop="name"><a><?php  echo '<img src="' . esc_url( get_theme_file_uri( 'images/cms_jobwork.png' ) ) . '" alt="">' ;?></a></p>    
+         <?php
+           
+            
         ?>
+         
       </span>
         <div class="flex flex-col items-center gap-6 mb-8 tile1">
         <div class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900 gaps">

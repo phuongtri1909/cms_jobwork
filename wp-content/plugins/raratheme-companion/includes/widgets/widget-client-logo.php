@@ -52,42 +52,18 @@ class RaraTheme_Client_Logo_Widget extends WP_Widget {
         ?>
             <div class="raratheme-client-logo-holder">
                 <div class="raratheme-client-logo-inner-holder">
-                    <?php
-                    if( $title ) { echo $args['before_title']; echo apply_filters( 'widget_title', $title, $instance, $this->id_base ); echo $args['after_title']; }
-                    if( isset( $instance['image'] ) && $instance['image']!='' )
-                    {
-                        foreach ($instance['image'] as $key => $value) {
-                            if( isset( $instance['image'][$key] ) && $instance['image'][$key]!='' ){
-                                    $attachment_id = $instance['image'][$key];
-                                    $cta_img_size = apply_filters('rrtc_cl_img_size','full');
-
-                                    $target = 'target="_self"';
-                                    if( isset($instance['target']) && $instance['target']!='' )
-                                    {
-                                        $target = 'rel="noopener noexternal" target="_blank"';
-                                    }
-                                ?>
-                                <div class="image-holder <?php echo esc_attr( $display_bw ); ?>">
-                                    <?php
-                                    if( isset($instance['link'][$key]) && $instance['link'][$key]!='' )
-                                    { ?>
-                                        <a href="<?php echo esc_url($instance['link'][$key]);?>" <?php echo $target;?>>
-                                    <?php
-                                    }
-                                    echo wp_get_attachment_image( $attachment_id, $cta_img_size, false, 
-                                        array( 'alt' => esc_html( $title )));
-                                    if( isset($instance['link'][$key]) && $instance['link'][$key]!='' )
-                                    {
-                                    echo '</a>';                                
-                                    }
-                                    ?> 
+                    <div class="fex items-center py-10 w-full gap-x-5 mrNewsletter1">                        
+                   <div class="w-1/5 font-extrabold text-white text-left newsletters ">
+                     <div class="bg-[#ea751e] ">
+                            <div class="container newsletters1 ">
+                                <div class="fex items-center py-10 w-full gap-x-5 brnewsletter ">
+                                <div class="contentFooter">
+                                     <?php echo do_shortcode('[contact-form-7 id="89dc36f" title="Email"]'); ?>
                                 </div>
-                                <?php
-                            }
-                        }
-                    }
-                    ?>					
-                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
 			</div>
         <?php
         $html = ob_get_clean();

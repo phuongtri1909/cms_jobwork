@@ -29,10 +29,10 @@ if( $ed_banner && has_custom_header() ){ ?>
                                         if( $find_a_job_link ){
                                             get_template_part('template-parts/header','form');
                                         }else{
-                                            get_search_form();
+                                            get_template_part('template-parts/header','form');
                                         }
                                     }else{
-                                        get_search_form();
+                                        get_template_part('template-parts/header','form');
                                     }
                                 ?>
                                 </div>

@@ -1,0 +1,9 @@
+
+---Downloaded files---
+The import files for: JobScout Demo were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://cms_jobwork.local
+Data file = C:\xampp\htdocs\cms_jobwork/wp-content/uploads/rara-demo-pack/jobscout-demo-content/content/jobscout.xml
+Widget file = C:\xampp\htdocs\cms_jobwork/wp-content/uploads/rara-demo-pack/jobscout-demo-content/content/jobscout.wie
+Customizer file = C:\xampp\htdocs\cms_jobwork/wp-content/uploads/rara-demo-pack/jobscout-demo-content/content/jobscout.dat

@@ -56,6 +56,25 @@ body{
     margin-top: -10px;
     margin-bottom: 9px;
 }
+
+#newest-blog .row.blog-all-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#newest-blog .col-md-6.blog-item {
+    display: flex;
+}
+
+#newest-blog .p-3.bg-light.blog-item1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#newest-blog .col-md-6.blog-item .blog-item1 {
+    flex: 1;
+}
+
 /* end footer */
 
 #find-custom .caption-inner{
@@ -65,6 +84,7 @@ body{
 
 #find-custom .caption-inner .description{
     color: #e3e3e1;
+    margin-bottom: 10px;
 }
 
 #find-custom .caption-inner .title{
@@ -163,7 +183,7 @@ body{
 }
 
 .header-custom .current_page_item{
-    border-bottom: solid #ea751e 3px;
+    border-bottom: solid #ea751e 3.5px;
 }
 
 .header-custom .current_page_item a{
@@ -177,6 +197,8 @@ body{
     border: unset !important;
     border-radius: 0px;
     text-transform: uppercase; 
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .header-custom .nav-menu{
     text-transform: uppercase; 
@@ -190,6 +212,8 @@ body{
 .tile-wrap .site-description{
     font-weight: bold;
     text-transform: uppercase; 
+    color: #000;
+    font-size: 14px;
 }
 .tile-wrap .site-title a{
     font-family: monospace; 
@@ -197,9 +221,109 @@ body{
     margin-bottom: 11px;
 }
 .tile-wrap .site-title {
-    margin-bottom: 11px;
+    margin-left: -13px;
+    margin-bottom: -4px;
+} 
+.tile-wrap .imagesheader{
+    margin-left: -10px;
+    margin-bottom: -4px; 
 }
 /*  */
 
 
 
+.headers{
+    background: #fff;
+}
+/* contact us */
+.custom-page  .entry-header .entry-title-contact {
+    display: none !important;
+}
+
+.site-main .entry-content .banner-contact{
+    position: relative;
+}
+.banner-contact  .img-banner-contact {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50%;
+    margin-right: -50%;
+    margin-top: -1.95em;
+}
+.banner-contact .img-banner-contact img {
+    width: 100%; 
+    height: 400px; 
+    opacity: 0.7;
+
+    /* object-fit: cover; */
+}
+
+.entry-content .banner-contact .entry-title-contact{
+    position: absolute;
+    top: 12.5rem;
+    right: 50%;
+    color: #ffff;
+    transform: translate(50%,-50%);
+    font-size: 40px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+.site-main .entry-content .content-address-contact{
+    position: relative;
+}
+.site-main .entry-content .content-address-contact h5,.site-main .entry-content .content-address-contact p{
+    text-align: center;
+}
+.site-main .entry-content .content-address-contact h5{
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.post-edit-link-contact{
+    display: none;
+}
+/* end contact us */
+/* newsletter*/
+
+.newsletters{
+    width: auto !important;
+    margin-right: -155px;
+    margin-left: -154px;
+}
+.emailAndIcon{
+    position: relative;
+}
+.fa-envelope{
+    position: absolute;
+    top: 18px;
+    left: 14px;
+}
+.emailAndIcon .wpcf7-validates-as-email{
+    padding-left: 42px;
+}
+.newsletterTile p{
+    font-size: 22px;
+    padding-left: 65px;
+    font-family: initial;
+}
+.brnewsletter{
+    padding-bottom: unset !important;
+    padding-top: unset !important;
+}
+.inputEmail .has-spinner{
+    background: unset;
+    border: 1px solid #fff;
+    border-radius:unset;
+    margin-right: 93px;
+}
+.newsletters .newsletters1{
+    text-align: center;
+}
+.mrNewsletter{
+ margin: unset !important;
+}
+.mrNewsletter1{
+padding: unset !important;
+}
+/* end newletter */
