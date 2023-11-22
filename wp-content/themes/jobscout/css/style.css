@@ -194,6 +194,8 @@ body{
     border: unset !important;
     border-radius: 0px;
     text-transform: uppercase; 
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .header-custom .nav-menu{
     text-transform: uppercase; 
@@ -216,7 +218,7 @@ body{
     margin-bottom: 11px;
 }
 .tile-wrap .site-title {
-    margin-left: -10px;
+    margin-left: -13px;
     margin-bottom: -4px;
 } 
 .tile-wrap .imagesheader{
